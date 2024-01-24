@@ -10,8 +10,7 @@
 		]
 	},
 	"gd": {
-		"win": "2.204",
-		"android": "2.205"
+		"win": "2.204"
 	},
 	"description": "Unlocks Explorers in the editor!"
 }
