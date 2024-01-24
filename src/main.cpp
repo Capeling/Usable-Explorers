@@ -15,7 +15,7 @@ class $modify(MenuLayer) {
 		Mod::get()->patch(reinterpret_cast<void*>(base::get() + 0x92283), { 0xba, 0x16, 0x00, 0x00, 0x00 });
 		#endif
 
-		#ifdef GEODE_IS_ANDROID32
+		/*#ifdef GEODE_IS_ANDROID32
 		log::info("patching ANDROID32");
 		Mod::get()->patch(reinterpret_cast<void*>(base::get() + 0x5241e), { 0x16, 0x29 });
 		Mod::get()->patch(reinterpret_cast<void*>(base::get() + 0x52400), { 0x16, 0x29 });
@@ -24,13 +24,14 @@ class $modify(MenuLayer) {
 
 		#ifdef GEODE_IS_ANDROID64
 		log::info("patching ANDROID64");
-		Mod::get()->patch(reinterpret_cast<void*>(0x50b34c), { 0x3f, 0x58, 0x00, 0x71 });
-		log::info("patched {}", 0x50b34c);
-		Mod::get()->patch(reinterpret_cast<void*>(0x50b328), { 0xc3, 0x02, 0x80, 0x52 });
-		log::info("patched {}", 0x50b328);
-		Mod::get()->patch(reinterpret_cast<void*>(0x50b324), { 0x3f, 0x58, 0x00, 0x71 });
-		log::info("patched {}", 0x50b324);
-		#endif
+		log::info("base: {}", base::get());
+		Mod::get()->patch(reinterpret_cast<void*>(base::get() +0x50b34c), { 0x3f, 0x58, 0x00, 0x71 });
+		log::info("patched {}", base::get() + 0x50b34c);
+		Mod::get()->patch(reinterpret_cast<void*>(base::get() +0x50b328), { 0xc3, 0x02, 0x80, 0x52 });
+		log::info("patched {}", base::get() + 0x50b328);
+		Mod::get()->patch(reinterpret_cast<void*>(base::get() +0x50b324), { 0x3f, 0x58, 0x00, 0x71 });
+		log::info("patched {}", base::get() + 0x50b324);
+		#endif*/
 
 		return true;
 	}
