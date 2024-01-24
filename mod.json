@@ -1,0 +1,17 @@
+{
+	"geode": "2.0.0",
+	"version": "v1.0.0",
+	"id": "capeling.usable_explorers",
+	"name": "Usable Explorers",
+	"developer": "Capeling",
+	"resources": {
+		"files": [
+			"resources/*.mp3"
+		]
+	},
+	"gd": {
+		"win": "2.204",
+		"android": "2.205"
+	},
+	"description": "Unlocks Explorers in the editor!"
+}
