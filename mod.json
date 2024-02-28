@@ -6,7 +6,7 @@
 	"developer": "Capeling",
 	"resources": {
 		"files": [
-			"resources/*.mp3"
+			"resources/Explorers.mp3"
 		]
 	},
 	"gd": {
